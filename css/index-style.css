@@ -24,6 +24,9 @@
 	box-sizing: border-box;
 	font-family: var(--font);
 }
+body{
+	background: white;
+}
 /* Header Start*/
 #container1{
 	width: 1020px;
