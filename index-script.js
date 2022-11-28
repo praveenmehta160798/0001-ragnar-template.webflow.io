@@ -157,22 +157,27 @@ var circle3 = document.querySelector(".image3 .circle");
 var circle4 = document.querySelector(".image4 .circle");
 var circle5 = document.querySelector(".image5 .circle");
 
-hoverArea1.addEventListener("mousemove", function (mousePosition){
-	circle1.style.display = "block";
-	circle1.style.transform = "translate(" + (mousePosition.layerX - 50) + "px," + (mousePosition.layerY - 50) + "px)";
-	//console.log("x = " + (mousePosition.layerX - 50) + " | y = " + mousePosition.layerY);
-	//console.log(mousePosition);
+hoverArea1.addEventListener("click", function (mousePosition){
+	//circle1.style.display = "block";
+	//var x = (mousePosition.clientX - (mousePosition.clientX - mousePosition.layerX));
+	//var y = (mousePosition.clientY - (mousePosition.clientY - mousePosition.layerY));
+	//circle1.style.transform = "translate(" + (x - 50) + "px," + (y - 50) +"px)";
+	console.log("X");d
+	console.log(x);
+	console.log("Y");
+	console.log(y);
+	console.log(mousePosition);
 });
 hoverArea1.addEventListener("mouseout", function(){
 	circle1.style.display = "none";
 });
-
+/*
 // ---------------------------------------------------------------
 
 hoverArea2.addEventListener("mousemove", function (mousePosition){
 	circle2.style.display = "block";
-	circle2.style.transform = "translate(" + (mousePosition.layerX - 50) + "px," + (mousePosition.layerY - 50) + "px)";
-	//console.log("x = " + (mousePosition.layerX - 50) + " | y = " + mousePosition.layerY);
+	circle2.style.transform = "translate(" + (mousePosition.layerX - hoverArea2.clientWidth) + "px," + (mousePosition.layerY - 50) + "px)";
+	//console.log("x = " + mousePosition.clientX + " | y = " + mousePosition.clientY);
 	//console.log(mousePosition);
 });
 hoverArea2.addEventListener("mouseout", function(){
