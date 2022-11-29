@@ -11,8 +11,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 	<!-- index css -->
 	<link rel="stylesheet" href="../index-style.css">
+	
+	<style>
+		#home-section-1 h1{
+			font-size: 12rem;
+		}
+		@media screen and (max-width: 425px){
+			#home-section-1 h1{
+				font-size: 6rem;
+			}
+		}
+	</style>
+	
 </head>
 <body>
+	<div id="loading">
+		<img src="../img/gif.gif">
+	</div>
 	<header id="header">
 		<div class="container">
 			<div class="logo">
@@ -64,6 +79,108 @@
 			</nav>
 		</div>
 	</header> <!--Header Ends Here-->
+	
+	<section id="home-section-1">
+		<div class="container">
+			<div class="logo">
+				<h1>Pricing</h1>
+			</div>
+			<div class="image"></div>
+		</div>
+	</section> <!--Home-section-1 Ends Here-->
+	
+	<section id="pricing-section-1">
+		<div class=".container">
+			<div class="box">
+				<div class="head head1">
+					<h4>Single-Page Website</h4>
+					<div class="sign">
+						<div class=""></div>
+						<div class="sign1"></div>
+					</div>
+				</div>
+				<div class="sub-box sub-box-1">
+					<div class="sub-box1">
+						<div class="sub-box1-1">
+							<div class="price">$ 1,200.00 USD</div>
+							<div class="billed">Billed Monthly</div>
+						</div>
+						<div class="sub-box1-2">Add to Cart</div>
+					</div>
+					<div class="sub-box2">
+						<ul>
+							<li>Responsive Website</li>
+							<li>One Page Website</li>
+							<li>Content Management System</li>
+							<li>Retina Ready Graphics</li>
+							<li>Pre-made Graphic Materials</li>
+							<li>Free Support</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="box">
+				<div class="head head2">
+					<h4>Multi-Page Website</h4>
+					<div class="sign">
+						<div class=""></div>
+						<div class="sign2"></div>
+					</div>
+				</div>
+				<div class="sub-box sub-box-2">
+					<div class="sub-box1">
+						<div class="sub-box1-1">
+							<div class="price">$ 5,900.00 USD</div>
+							<div class="billed">Billed Monthly</div>
+						</div>
+						<div class="sub-box1-2">Add to Cart</div>
+					</div>
+					<div class="sub-box2">
+						<ul>
+							<li>2 to 10 Pages</li>
+							<li>Responsive Website</li>
+							<li>Retina Ready Graphics</li>
+							<li>Content Management System</li>
+							<li>App Intergations</li>
+							<li>Free Support</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="box">
+				<div class="head head3">
+					<h4>Printing Package</h4>
+					<div class="sign">
+						<div class=""></div>
+						<div class="sign3"></div>
+					</div>
+				</div>
+				<div class="sub-box sub-box-3">
+					<div class="sub-box1">
+						<div class="sub-box1-1">
+							<div class="price">$ 3,900.00 USD</div>
+							<div class="billed">Billed Monthly</div>
+						</div>
+						<div class="sub-box1-2">Add to Cart</div>
+					</div>
+					<div class="sub-box2">
+						<ul>
+							<li>Brand Design Packages</li>
+							<li>Graphics Campaigns</li>
+							<li>Printing Surfaces</li>
+							<li>Printing Presentation</li>
+							<li>Installation Grapgics</li>
+							<li>3D Printers</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!--Pricing Section 1 Ends Here-->
+	
+	<section id="pricing-section-2">
+		<div class=".container"></div>
+	</section><!--Pricing Section 2 Ends Here-->
 	
 	<footer id="footer">
 		<div class="container">
@@ -121,5 +238,84 @@
 	</footer><!--Footer Ends Here-->
 	
 	<script src="../index-script.js"></script>
+	<script>
+		
+		/*Price Toggle Start*/
+		var head1 = document.querySelector(".head1");
+		var price1 = document.querySelector(".sub-box-1");
+		var sign1 = document.querySelector(".sign1");
+		var c = 1;
+		head1.addEventListener("click", function(){
+			if(c == 1){		
+				console.log("it click");
+				price1.style.height = "400px";
+				price1.style.padding = "50px 0px";
+				sign1.style.transform = "rotate(0deg)";
+				c = 0;
+			}
+			else{
+				console.log("it click");
+				price1.style.height = "0px";
+				price1.style.padding = "0px";	
+				sign1.style.transform = "rotate(90deg)";
+				c = 1;		
+			}
+		});
+
+
+
+
+		var head2 = document.querySelector(".head2");
+		var price2 = document.querySelector(".sub-box-2");
+		var sign2 = document.querySelector(".sign2");
+		var d = 1;
+		head2.addEventListener("click", function(){
+			if(d == 1){		
+				console.log("it click");
+				price2.style.height = "400px";
+				price2.style.padding = "50px 0px";
+				sign2.style.transform = "rotate(0deg)";
+				d = 0;
+			}
+			else{
+				console.log("it click");
+				price2.style.height = "0px";
+				price2.style.padding = "0px";	
+				sign2.style.transform = "rotate(90deg)";
+				d = 1;		
+			}
+		});
+
+
+
+
+		var head3 = document.querySelector(".head3");
+		var price3 = document.querySelector(".sub-box-3");
+		var sign3 = document.querySelector(".sign3");
+		var e = 1;
+		head3.addEventListener("click", function(){
+			if(e == 1){		
+				console.log("it click");
+				price3.style.height = "400px";
+				price3.style.padding = "50px 0px";
+				sign3.style.transform = "rotate(0deg)";
+				e = 0;
+			}
+			else{
+				console.log("it click");
+				price3.style.height = "0px";
+				price3.style.padding = "0px";	
+				sign3.style.transform = "rotate(90deg)";
+				e = 1;		
+			}
+		});
+
+
+
+
+
+		/*Price Toggle End*/
+
+	</script>
 </body>
 </html>

@@ -11,8 +11,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 	<!-- index css -->
 	<link rel="stylesheet" href="../index-style.css">
+	
+	<style>
+		#home-section-1 h1{
+			font-size: var(--font-size-10);
+		}
+		#home-section-1 .image{
+			width: 100%;
+			height: 100vh;
+			background: red;
+			background: url(../img/about/img04.jpg) no-repeat center;
+			background-size: cover;
+		}
+		@media screen and (max-width: 768px){
+			#home-section-1 .image{
+				height: 50vh
+			}
+		}
+		@media screen and (max-width: 425px){
+			#home-section-1 h1{
+				font-size: 6rem;
+			}
+		}
+	</style>
 </head>
 <body>
+	<div id="loading">
+		<img src="../img/gif.gif">
+	</div>
 	<header id="header">
 		<div class="container">
 			<div class="logo">
@@ -65,6 +91,179 @@
 		</div>
 	</header> <!--Header Ends Here-->
 	
+	<section id="home-section-1">
+		<div class="container">
+			<div class="logo">
+				<h1>About</h1>
+			</div>
+			<div class="image"></div>
+		</div>
+	</section> <!--Home-section-1 Ends Here-->
+	
+	<section id="home-section-4">
+		<div class="container">
+			<div class="content-2">
+				<div class="box">
+					<div class="head-box">
+							<h4>Our Story</h4>
+						<div class="head">
+							<h5>We are Based in South Miami</h5>
+						</div>
+					</div>
+				</div>
+				<div class="box">
+					<div class="image">
+						<image src="../img/home/img14.jpg">
+					</div>
+					<div class="text1">Lorem ipsum dolor 😂sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare,👋 eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem  ✅ vitae risus tristique posuere.</div>
+					<div class="text2">At magnum periculum adiit in oculis quidem rerum necessitatibus saepe eveniet, ut ipsi. Probabo, inquit, sic agam, ut perspiciatis, unde omnis dolor repellendus temporibus autem quibusdam.</div>
+					<div class="list">
+						<div class="head">
+							<h2>Our goals</h2>
+						</div>
+						<ul>
+							<li>Webflow Development</li>
+							<li>Graphic Design</li>
+							<li>Customer Research</li>
+							<li>Copy Creation</li>
+						</ul>
+					</div>
+					<div class="text">Certe, inquam, pertinax non possim accommodare torquatos nostros? quos tu tam egregios viros. Torquatos nostros? quos dolores et dolorem ipsum, quia dolor sit, voluptatem appetere eaque. At vero eos et voluptatem ipsam causam non recusandae itaque negat opus esse. In oculis quidem se oratio, tua praesertim, qui dolorem eum fugiat, quo minus.</div>
+				</div>
+			</div>
+		</section> <!--Home-section-4 Ends Here-->
+		
+	<section id="home-section-3">
+		<div class="container">
+			<div class="head">
+				<h3>Our Features</h3>
+			</div>
+			<div class="content">
+				<div class="box">
+					<div class="logo">
+						<img src="../img/home/img10.svg">
+					</div>
+					<div class="name">
+						<h4>Webflow Design</h4>
+					</div>
+					<div class="text">Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor</div>
+					<div class="more">
+						<a href="">Learn More</a>
+					</div>
+				</div>
+				<div class="box">
+					<div class="logo">
+						<img src="../img/home/img11.svg">
+					</div>
+					<div class="name">
+						<h4>CMS Content</h4>
+					</div>
+					<div class="text">Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor</div>
+					<div class="more">
+						<a href="">Learn More</a>
+					</div>
+				</div>
+				<div class="box">
+					<div class="logo">
+						<img src="../img/home/img12.svg">
+					</div>
+					<div class="name">
+						<h4>Powerful (CMS)</h4>
+					</div>
+					<div class="text">Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor</div>
+					<div class="more">
+						<a href="">Learn More</a>
+					</div>
+				</div>
+				<div class="box">
+					<div class="logo">
+						<img src="../img/home/img13.svg">
+					</div>
+					<div class="name">
+						<h4>Friendly Support</h4>
+					</div>
+					<div class="text">Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor</div>
+					<div class="more">
+						<a href="">Learn More</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> <!--Home-section-3 Ends Here-->
+	
+	<section id="home-section-1">
+		<div class="container">
+			<div class="video">
+				<video autoplay muted loop>
+					<source src="../other files/video.mp4" type="video/mp4"></source>
+				</video>
+				<div class="video-overlay"></div>
+			</div>
+		</div>
+	</section> <!--Home-section-1 Ends Here-->
+	
+	<section id="about-section-1">
+		<div class="container">
+			<div class="head">
+				<h4>Our AWARDS</h4>
+			</div>
+			<div class="content">
+				<div class="box">
+					<div class="awards">AWARD Type</div>
+					<div class="year">YEAR</div>
+				</div>
+				<div class="box">
+					<div class="awards">Site of the day</div>
+					<div class="year">2022</div>
+				</div>
+				<div class="box">
+					<div class="awards">Developer Award</div>
+					<div class="year">2021</div>
+				</div>
+				<div class="box">
+					<div class="awards">Honorable Mention</div>
+					<div class="year">2021</div>
+				</div>
+				<div class="box">
+					<div class="awards">Mobile Excellence</div>
+					<div class="year">2020</div>
+				</div>
+				<div class="box">
+					<div class="awards">UX Design Award</div>
+					<div class="year">2020</div>
+				</div>
+				<div class="box">
+					<div class="awards">Innovation Design Award</div>
+					<div class="year">2019</div>
+				</div>
+				<div class="box">
+					<div class="awards">Website of the Day</div>
+					<div class="year">2018</div>
+				</div>
+			</div>
+		
+		</div>
+	</section>
+	
+	<section id="home-section-7">
+		<div class="container">
+			<div class="head">
+				<h4>Our Clients</h4>
+			</div>
+			<div class="content">
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+			</div>
+		</div>
+	</section> <!--Home-section-7 Ends Here-->
+	
+
 	<footer id="footer">
 		<div class="container">
 			<h2>Let's work together</h2>

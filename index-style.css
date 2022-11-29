@@ -47,6 +47,25 @@ body{
 /*--------------------------------------------------------------------------*/
 /*--------------------------------------------------------------------------*/
 
+/*Loading Start*/
+#loading{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	background: black;
+	width: 100%;
+	height: 100%;
+	z-index: 150;
+	top: 0;
+}
+#loading img{
+	width: 100px;
+}
+/*Loading End*/
+
+/*--------------------------------------------------------------------------*/
+
 /*Header Start*/
 #header{
 	width: 100%;
@@ -502,8 +521,166 @@ body{
 /*--------------------------------------------------------------------------*/
 
 /*Home-Section-7 Start*/
-
+#home-section-7{
+	background: var(--theme-color-1);
+	color: var(--theme-color-2);
+	padding: 100px 20px;
+}
+#home-section-7 .content{
+	margin-top: 60px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+#home-section-7 .box{
+	width: 22%;
+	height: 100px;
+	margin-top: 40px;
+}
+#home-section-7 .box:nth-child(1){
+	background: url(img/home/img20.svg) no-repeat center;
+	background-size: contain;	
+}
+#home-section-7 .box:nth-child(2){
+	background: url(img/home/img21.svg) no-repeat center;
+	background-size: contain;	
+}
+#home-section-7 .box:nth-child(3){
+	background: url(img/home/img22.svg) no-repeat center;
+	background-size: contain;	
+}
+#home-section-7 .box:nth-child(4){
+	background: url(img/home/img23.svg) no-repeat center;
+	background-size: contain;	
+}
+#home-section-7 .box:nth-child(5){
+	background: url(img/home/img24.svg) no-repeat center;
+	background-size: contain;	
+}
+#home-section-7 .box:nth-child(6){
+	background: url(img/home/img25.svg) no-repeat center;
+	background-size: contain;	
+}
+#home-section-7 .box:nth-child(7){
+	background: url(img/home/img26.svg) no-repeat center;
+	background-size: contain;	
+}
+#home-section-7 .box:nth-child(8){
+	background: url(img/home/img27.svg) no-repeat center;
+	background-size: contain;	
+}
 /*Home-Section-7 End*/
+
+/*--------------------------------------------------------------------------*/
+
+/*About-Section-1 Start*/
+#about-section-1{
+	padding: 100px 20px;
+}
+#about-section-1 .container{
+	display: flex;
+	justify-content: space-between
+}
+#about-section-1 h4{
+	font-size: var(--font-size-8);
+}
+#about-section-1 .content{
+	width: 60%;
+	padding-top: 100px;
+}
+#about-section-1 .box{
+	display: flex;
+	padding-bottom: 10px;
+	justify-content: space-between;
+	border-bottom: 1px solid var(--theme-color-1);
+	margin-bottom: 20px;
+}
+#about-section-1 .awards{
+	font-size: var(--font-size-6);
+	font-weight: var(--font-weight-3);
+}
+#about-section-1 .year{
+	font-size: var(--font-size-5);
+	font-weight: var(--font-weight-2);
+}
+/*About-Section-1 End*/
+
+/*--------------------------------------------------------------------------*/
+
+/*Pricing-Section-1 Start*/
+#pricing-section-1{
+	padding: 100px 20px;
+}
+#pricing-section-1 .box:first-child,
+#pricing-section-1 .box:last-child{
+	border-top: 1px solid var(--theme-color-1);
+	border-bottom: 1px solid var(--theme-color-1);
+}
+#pricing-section-1 .box{
+}
+#pricing-section-1 .head{
+	padding: 50px 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#pricing-section-1 .head:hover{
+	cursor: pointer;
+}
+#pricing-section-1 .head:hover > h4{
+	transform: translateX(30px);
+}
+#pricing-section-1 .sign{
+	position: relative;
+	right: 100px;
+}
+#pricing-section-1 .sign > div{
+	width: 20px;
+	height: 2px;
+	background: var(--theme-color-1);
+	position: absolute;
+}
+#pricing-section-1 .sign > div:last-child{
+	transform: rotate(90deg);
+}
+#pricing-section-1 .sub-box{
+	display: flex;
+	align-items: center;
+	
+	height: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+#pricing-section-1 .sub-box1{
+	width: 60%;
+}
+#pricing-section-1 .price{
+	font-size: var(--font-size-6);
+	font-weight: var(--font-weight-3);
+}
+#pricing-section-1 .billed{
+	font-size: var(--font-size-1);
+	font-weight: var(--font-weight-1);
+	text-transform: uppercase;
+	margin-top: 10px;
+}
+#pricing-section-1 .sub-box1-2{
+	margin-top: 200px;
+	text-align: center;
+	font-size: var(--font-size-4);
+	font-weight: var(--font-weight-4);
+	padding: 20px 50px;
+	width: max-content;
+	background: var(--theme-color-1);
+	color: var(--theme-color-2);
+}
+#pricing-section-1 li{
+	list-style-type: disc;	
+	font-size: var(--font-size-2);
+	font-weight: var(--font-weight-4);
+	margin: 10px;
+}
+/*Pricing-Section-1 End*/
 
 /*--------------------------------------------------------------------------*/
 
@@ -621,6 +798,22 @@ body{
 
 	/*Home-Section-7 End*/
 
+	/*--------------------------------------------------------------------------*/
+	
+	/*About-Section-1 Start*/
+	#about-section-1 h4{
+		font-size: var(--font-size-6);
+	}
+	#about-section-1 .awards{
+		font-size: var(--font-size-4);
+		font-weight: var(--font-weight-3);
+	}
+	#about-section-1 .year{
+		font-size: var(--font-size-3);
+		font-weight: var(--font-weight-2);
+	}
+	/*About-Section-1 End*/
+	
 	/*--------------------------------------------------------------------------*/
 	
 	/*Footer Start*/
@@ -800,9 +993,50 @@ body{
 	/*--------------------------------------------------------------------------*/
 
 	/*Home-Section-7 Start*/
-
+	
 	/*Home-Section-7 End*/
 
+	/*--------------------------------------------------------------------------*/
+	
+	/*Pricing-Section-1 Start*/
+	#pricing-section-1{
+		padding-bottom: 0px;
+		padding-top: 50px;
+	}
+	#pricing-section-1 .head{
+		padding: 20px 0px;
+	}
+	#pricing-section-1 .sub-box{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: left;
+		
+		height: 0px;
+		padding: 0px;
+		overflow: hidden;
+	}
+	#pricing-section-1 .sub-box1-2{
+		margin-top: 10px;
+		padding: 10px 20px;
+		font-size: var(--font-size-2);
+	}
+	#pricing-section-1 ul{
+		margin-left: 40px;
+	}
+	#pricing-section-1 .price{
+		font-size: var(--font-size-4);
+	}
+	#pricing-section-1 h4{
+		font-size: var(--font-size-5);
+		letter-spacing: -2px;
+	}
+	#pricing-section-1 .sign{
+		position: relative;
+		right: 20px;
+	}
+	/*Pricing-Section-1 End*/
+	
 	/*--------------------------------------------------------------------------*/
 	
 	/*Footer Start*/
@@ -930,9 +1164,37 @@ body{
 	/*--------------------------------------------------------------------------*/
 
 	/*Home-Section-7 Start*/
-
+	#home-section-7 .box{
+		width: 40%;
+		height: 100px;
+		margin-top: 40px;
+	}
+	#home-section-7 .content{
+		margin-top: 10px;
+	}
 	/*Home-Section-7 End*/
 
+	/*--------------------------------------------------------------------------*/
+	
+	/*About-Section-1 Start*/
+	#about-section-1 .container{
+		flex-direction: column;
+	}
+	#about-section-1 h4{
+		font-size: var(--font-size-6);
+	}
+	#about-section-1 .content{
+		width: 100%;
+		padding-top: 50px;
+	}
+	#about-section-1 .awards{
+		font-size: var(--font-size-4);
+	}
+	#about-section-1 .year{
+		font-size: var(--font-size-3);
+	}
+	/*About-Section-1 End*/
+	
 	/*--------------------------------------------------------------------------*/
 	
 	/*Footer Start*/

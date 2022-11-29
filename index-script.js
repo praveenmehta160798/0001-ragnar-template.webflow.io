@@ -25,6 +25,18 @@ function menuHide(){
 
 /*----------------------------------------------------------------------------------------*/
 
+/*On load function Start*/
+var load = document.getElementById("loading");
+
+window.addEventListener("load", function(){
+	load.style.display= "none";
+});
+/*On load function End*/
+
+/*----------------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------------*/
+
 /*Hamburger Start*/
 var hamburgerBox = document.querySelector("#header .hamburger-box");
 var hamburger1 = document.querySelector("#header .hamburger1");
